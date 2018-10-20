@@ -1,0 +1,71 @@
+// 1. Newton Second Law
+ALGORITHMA:
+1. Simpan "massa benda" dengan nilai 600 kg
+2. Simpan "percepatan benda" dengan nilai 2 m/s2
+3. Simpan "resultan gaya" tanpa diberikan nilai
+4. Hitung hasil perkalian "massa benda" dengan "percepatan benda"
+5. Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam "resultan gaya"
+6. Tampilkan nilai dalam "resultan gaya"
+
+PSEDOCODE:
+STORE "massa benda" with 600 kg 
+STORE "percepatan benda" with 2 m/s2
+STORE "resultan gaya" without any value
+
+CALCULATE "percepatan benda" with "massa benda"
+SET "resultan gaya" with calculation resultan
+
+DISPLAY "resultan gaya"
+
+
+// 2. Tahun Kabisat
+ALGORITHMA:
+1. Simpan "tahun" dengan nilai berapapun
+2. Jika "tahun" habis di bagi 4 sehingga modulus nilai 0 dan "tahun" tidak habis di bagi 100 sehingga modulus nilai 1
+3. Jika "tahun" habis di bagi 4 sehingga modulus nilai 0, "tahun" habis di bagi 100 sehingga modulus nilai 0 dan "tahun" habis di bagi 400 sehingga modulus nilai 0
+4. Tampilkan "tahun kabisat" apabila nilai 0
+5. Tampilkan "bukan tahun kabisat" apabila nilai 1
+
+PSEUDOCODE:
+IF "tahun" modulus 4 equal to 0
+    IF "tahun" modulus 100 not equal to 0
+    ELSE IF "tahun" modulus 4 equal to 0
+    ELSE IF "tahun" modulus 100 equal to 0
+    ELSE IF "tahun" modulus 400 equal to 0
+        DISPLAY "tahun kabisat"
+    ELSE
+        DISPLAY "bukan tahun kabisat"
+
+
+// 3. Laundry Day
+ALGORITHMA:
+1. Simpan "pakaian" dengan nilai berapapun
+2. Ulangi "pakaian" apabila masih kurang dari 20, apabila telah mencukupi lanjut ke step 4
+3. Tambah "pakaian" dengan nilai 1
+4. Tampilkan "mesin cuci dinyakalan"
+
+PSEUDOCODE:
+STORE "pakaian" with any value
+WHILE "pakaian" < 20
+ADD "pakaian" by 1
+    IF pakaian equal to 20
+        DISPLAY "mesin cuci dinyalakan"
+
+
+// 4. Periksa Kuku
+ALGORITHMA:
+1. Simpan "kuku" dengan nilai berapapun
+2. Ulangi "kuku" apabila masih kurang dari 40, apabila telah mencukupi lanjut ke step 4
+3. Tambah "kuku" dengan nilai 1
+4. Tampilkan "mendapat pujian dari guru" apabila habis di bagi 2 sehinga modulus 0
+5. Tampilkan "mendapat hukuman dari guru" apabilatidak habisa di bagi 2 sehingga modulus 1
+
+PSEUDOCODE:
+STORE "kuku" with any value
+WHILE "kuku" < 20
+ADD "kuku" by 1
+    IF "kuku" modulus 2 equal to 0
+        DISPLAY "mendapatkan pujian dari guru
+    IF "kuku" modulus 2 not equal to 0
+        DISPLAY "mendapatkan hukuman dari guru
+
