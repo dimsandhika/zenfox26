@@ -62,7 +62,7 @@ ALGORITHMA:
 
 PSEUDOCODE:
 STORE "kuku" with any value
-WHILE "kuku" < 20
+WHILE "kuku" < 40
 ADD "kuku" by 1
     IF "kuku" modulus 2 equal to 0
         DISPLAY "mendapatkan pujian dari guru
