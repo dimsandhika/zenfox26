@@ -39,24 +39,15 @@ for (var i = 1; i < 5; i++) {
 
 
 // 3. Menyusun Barisan Tangga Bintang Dengan Nested Looping
-var rows3 = 1;
-var limit = 5;
+// var stars = ''
+var rows3 = 1
+var limit = 5
+var a = 1
 var stars = ''
-while(rows3 <= limit) { // Looping menggunakan While
-  rows3++
-}
 
-var i = 1;
-while(i < rows3) {
-stars = stars + '*'
-console.log(stars)
-i++
-}
-
-var stars = ''
-for (var rows3 = 1; rows3 <= 5; rows3++) { // Looping menggunakan For
-}
-for (var i = 1; i < rows3; i++) {
-  stars = stars + "*"
+while(rows3++ <= limit) {
+  while(a++ <= limit) {
+  stars = stars + '*'
   console.log(stars)
-}
+  }
+ }
