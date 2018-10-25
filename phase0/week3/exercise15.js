@@ -1,27 +1,26 @@
 // Logic Challenge - Mengelompokan Hewan
+// Algorithma :
+// 1. default saya sedang mencari apa?kalo masih sama dengan yang saya cari saya akan masukan direkanjang yang sama.
+// 2. kalo udah beda saya akan memasukan keranjang kecil sebelumnya ke keranjang besar kemudian akan membuat keranjang kecil baru lagi kemudian masukan buah yang baru, kemudian default buah yang saya cari akan berubah juga sesuai dengan buah yang terakhir.
 function groupAnimals(animals) {
-    var hasil = [];
+    animals.sort()
+    var result = [];
+    var hurufCari = animals[0][0];
+    var keranjangKecil = [];
 
-    for (var i = 0; i < 4; i++) {
-        hasil.push([]);
-    }
-
-    for (var j = 0; j < animals.length; j++) {
-        if (animals[j] === animals[1] || animals[j] === animals[3]) {
-            hasil[0].push(animals[j])
-        } else if (animals[j] === animals[0]) {
-            hasil[1].push(animals[j])
-        } else if (animals[j] === animals[6]) {
-            hasil[1].push(animals[j])
-        } else if (animals[j] === animals[2] || animals[j] === animals[4]) {
-            hasil[2].push(animals[j])
-        } else if (animals[j] === animals[5]) {
-            hasil[3].push(animals[j])
+    for (var i = 0; i < animals.length; i++) {
+        if (animals[i][0] === hurufCari) {
+            keranjangKecil.push(animals[i])
+        } else {
+            result.push(keranjangKecil);
+            keranjangKecil = [];
+            keranjangKecil.push(animals[i]);
+            hurufCari = animals[i][0]
         }
     }
-    return hasil
+    result.push(keranjangKecil)
+    return result
 }
-
 // TEST CASES
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
 // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
