@@ -3,12 +3,13 @@ var angkaBaru = true;
 
 function bandingkanAngka(angka1, angka2) {
     if (angka1 < angka2) {
-        return true;
+        angkaBaru =  true;
     } else if (angka1 > angka2) {
-        return false;
+        angkaBaru = false;
     } else {
-        return -1;
+        angkaBaru = -1;
     }
+    return angkaBaru
 }
   
   // TEST CASES
