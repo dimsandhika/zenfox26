@@ -10,7 +10,7 @@ function pasanganTerbesar(num) {
         digitKanan = strnum[j + 1]
       }
     }
-    return digitKiri + digitKanan
+    return Number(digitKiri + digitKanan)
   }
   
   // TEST CASES

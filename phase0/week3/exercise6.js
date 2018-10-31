@@ -8,12 +8,11 @@ function angkaPalindrome(num) {
   
       for (var j = strnum.length - 1; j >= 0; j--) {
         result = result + strnum[j]
+      }
         if (result == strnum) {
-          return strnum
-        }
+          return num
       }
     }
-    return result
   }
   
   // TEST CASES
