@@ -1,17 +1,18 @@
 // Logic Challenge - Pasangan Angka Terbesar
 function pasanganTerbesar(num) {
-var strNum = String(num);
-var angka;
-var banding = 0;
-
-for (var i = 0; i < strNum.length; i++) {
-    angka = Number(strNum[i] + strNum[i + 1])
-    if (angka > banding) {
-        banding = angka
+    var strnum = String(num);
+    var digitKiri = 0
+    var digitKanan = 0
+  
+    for (var j = 0; j < strnum.length; j++) {
+      if (strnum[j] > digitKiri) {
+        digitKiri = strnum[j] 
+        digitKanan = strnum[j + 1]
+      }
     }
-    }
-    return banding
-}
+    return digitKiri + digitKanan
+  }
+  
   // TEST CASES
   console.log(pasanganTerbesar(641573)); // 73
   console.log(pasanganTerbesar(12783456)); // 83

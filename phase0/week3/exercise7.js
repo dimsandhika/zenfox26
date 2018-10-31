@@ -1,13 +1,13 @@
 // Logic Challenge - Menghitung Jumlah Kata
 function hitungJumlahKata(kalimat) {
-        var kalimatSplit = kalimat.split(' ');
-        var hitungKalimat = 0;
-
-        for (var i = 0; i < kalimatSplit.length; i++) {
-                hitungKalimat += 1
+        var kalimatBaru = kalimat.split(' ')
+        var result = '';
+      
+        for (var i = 0; i < kalimatBaru.length; i++) {
+          result++
         }
-        return hitungKalimat
-}
+        return result
+      }
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4

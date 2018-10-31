@@ -1,21 +1,24 @@
 // Logic Challenge - Number Palindrome
 function angkaPalindrome(num) {
-    for (var i = num; true; num++) {
 
-        var strAngka = String(num)
-        var angkaBalik = '';
-        for (var j = strAngka.length - 1; j >= 0; j--) {
-            angkaBalik += strAngka[j]
-            if (strAngka == angkaBalik) {
-                return strAngka
-            }
+    for (var i = 0; i < num; i++) {
+      num++
+      var strnum = String(num);
+      var result = '';
+  
+      for (var j = strnum.length - 1; j >= 0; j--) {
+        result = result + strnum[j]
+        if (result == strnum) {
+          return strnum
         }
+      }
     }
-    return angkaBalik
-}
-// TEST CASES
-console.log(angkaPalindrome(8)); // 9
-console.log(angkaPalindrome(11)); // 11
-console.log(angkaPalindrome(117)); // 121
-console.log(angkaPalindrome(175)); // 181
-console.log(angkaPalindrome(1000)); // 1001
+    return result
+  }
+  
+  // TEST CASES
+  console.log(angkaPalindrome(8)); // 9
+  console.log(angkaPalindrome(10)); // 11
+  console.log(angkaPalindrome(117)); // 121
+  console.log(angkaPalindrome(175)); // 181
+  console.log(angkaPalindrome(1000)); // 1001
